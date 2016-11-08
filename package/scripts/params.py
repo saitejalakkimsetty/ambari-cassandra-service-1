@@ -9,6 +9,10 @@ cassandra_conf_dir = '/etc/dse/cassandra/'
 cassandra_user = 'cassandra'
 
 config_defaults = {
+    'cluster_name': 'Test Cluster',
+    'num_tokens': 128,
+    'listen_address': 'localhost',
+    'rpc_address': 'localhost',
     'cross_node_timeout': False,
     'inter_dc_tcp_nodelay': False,
     'rpc_server_type':  'sync',
@@ -17,10 +21,8 @@ config_defaults = {
     'tombstone_warn_threshold': 1000,
     'internode_compression': 'all',
     'truncate_request_timeout_in_ms': 60000,
-    'cluster_name': 'Test Cluster',
     'read_request_timeout_in_ms': 5000,
     'ssl_storage_port': 7001,
-    'listen_address': 'localhost',
     'request_scheduler': 'org.apache.cassandra.scheduler.NoScheduler',
     'range_request_timeout_in_ms': 10000,
     'hinted_handoff_enabled': True,
@@ -42,7 +44,6 @@ config_defaults = {
     'dynamic_snitch_update_interval_in_ms': 100,
     'commitlog_segment_size_in_mb': 32,
     'trickle_fsync': False,
-    'rpc_address': 'localhost',
     'concurrent_counter_writes': 32,
     'counter_cache_save_period': 7200,
     'commitlog_sync_period_in_ms': 10000,
@@ -56,7 +57,6 @@ config_defaults = {
     'row_cache_size_in_mb': 0,
     'dynamic_snitch_badness_threshold': 0.10000000000000001,
     'rpc_keepalive': True,
-    'num_tokens': 256,
     'row_cache_save_period': 0,
     'permissions_validity_in_ms': 2000,
     'dynamic_snitch_reset_interval_in_ms': 600000,
