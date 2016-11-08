@@ -5,9 +5,8 @@
         <service>
             <name>CASSANDRA</name>
             <displayName>Cassandra</displayName>
-            <comment>Apache Cassandra</comment>
-            <version>2.1.10</version>
-
+            <comment>DataStax Enterprise</comment>
+            <version>5.0.3</version>
             <components>
                 <component>
                     <name>CASSANDRA_NODE</name>
@@ -28,13 +27,12 @@
                     </configFiles>
                 </component>
             </components>
-
             <osSpecifics>
                 <osSpecific>
                     <osFamily>any</osFamily>
                     <packages>
                         <package>
-                            <name>cassandra21</name>
+                            <name>dse-full</name>
                         </package>
                         <package>
                             <name>PyYAML</name>

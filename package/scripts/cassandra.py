@@ -14,10 +14,10 @@ class Cassandra(object):
              owner=params.cassandra_user)
 
     def start(self, env):
-        Execute(('service', 'cassandra', 'start'))
+        Execute(('service', 'dse', 'start'))
 
     def stop(self, env):
-        Execute(('service', 'cassandra', 'stop'))
+        Execute(('service', 'dse', 'stop'))
 
     def status(self, env):
-        Execute(('service', 'cassandra', 'status'))
+        Execute(('service', 'dse', 'status'))
